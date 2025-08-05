@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    image: nikshitakarkera/springbootdemo:latest
+    ports:
+      - "8090:8090"
+    environment:
+      SERVER_PORT: 8090
+      SERVER_SERVLET_CONTEXT_PATH: /api/v1
+      SPRING_APPLICATION_NAME: deutsche-springboot-demo-aug-2025-main
+      LOGGING_FILE_NAME: app.log
+      MANAGEMENT_TRACING_SAMPLING_PROBABILITY: 1.0
+    restart: unless-stopped

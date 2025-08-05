@@ -34,10 +34,14 @@
 
 	<dependencies>
 
+		<!--		spring boot -->
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+		<!--		database connectivity with jpa-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -54,20 +58,30 @@
 			<artifactId>hibernate-core</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+
+		<!--		<dependency>-->
+		<!--			<groupId>com.mysql</groupId>-->
+		<!--			<artifactId>mysql-connector-j</artifactId>-->
+		<!--		</dependency>-->
+
 		<!--		<dependency>-->
 		<!--			<groupId>org.postgresql</groupId>-->
 		<!--			<artifactId>postgresql</artifactId>-->
 		<!--		</dependency>-->
 
-		<dependency>
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
-		</dependency>
+
+		<!--		devtools -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
+
+		<!--		swagger ui -->
 
 		<dependency>
 			<groupId>org.springdoc</groupId>
@@ -75,17 +89,8 @@
 			<version>2.8.9</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>42.7.3</version> <!-- or the latest -->
-		</dependency>
-
 		<!--Zipkin dependencies -->
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-		</dependency>
+
 		<dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-tracing-bridge-brave</artifactId>
@@ -107,6 +112,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+
+		<!--		unit testing and mockito -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
