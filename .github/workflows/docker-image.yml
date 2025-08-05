@@ -25,7 +25,7 @@ jobs:
 
       # Step 5: Log in to Docker Hub
       - name: Log in to Docker Hub using CLI
-        uses: docker login -u nikshitakarkera -p ${{secrets.DOCKER_HUB_TOKEN}}
+        uses: docker login -u nikshitakarkera -p Bunny_874
 
       # Step 6: Build Docker image
       - name: Build Docker image
